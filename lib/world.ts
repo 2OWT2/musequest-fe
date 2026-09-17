@@ -37,6 +37,11 @@ export type Loot = {
   reactions: Reaction[];
 };
 export type World = {
+  loop?: {
+    paused: boolean; running: boolean; phase: string; message: string; nextRunAt: string | null;
+    roundsToday?: number; modelCallsToday?: number; searchCallsToday?: number;
+    maxRoundsPerDay?: number; delayMs?: number; dailyBudgetCents?: number;
+  };
   quest: { id: string; title: string; description: string; status: string };
   muses: Muse[];
   loot: Loot[];

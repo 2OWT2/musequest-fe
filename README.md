@@ -1,6 +1,6 @@
 # MUSEQUEST frontend
 
-Milestones 1–2: a responsive, Reddit-inspired discovery feed with inline Muse discussions, potential scores, rarity filters, Newest / Top sorting, a Vault, and Muse profiles. Live AI discovery is not implemented yet. See `../MUSEQUEST_MVP_BRIEF.md` for the remaining milestones.
+The responsive discovery feed includes inline Muse discussions, potential scores, rarity filters, Newest / Top sorting, a Vault, and Muse profiles. API mode now displays real Bedrock/Tavily discoveries, sequential AI replies, final verdicts, and the bounded scheduler's working/paused state. It refreshes every 15 seconds. Mr. Frib ($FRIB) is the first verified live evaluation: three replies, 15/100, and Vault visibility. Scheduling controls remain local to the backend. See `../MUSEQUEST_MVP_BRIEF.md` for the handoff.
 
 ## Run the preview
 
@@ -14,9 +14,19 @@ Copy `.env.example` to `.env.local`, set `MUSEQUEST_DATA_MODE=api`, and start th
 
 Set these values before starting development or building production. Restart development or rebuild when changing them. No model credentials belong in the frontend.
 
+## Reference UI redesign
+
+The board uses a navy/lavender three-column layout on desktop, a two-column tablet layout, and a single-column mobile layout. The header, navigation, hero, feed, and overview panels are separate presentation components; `QuestBoard` retains live loading, refresh, and selection state.
+
+- Ctrl/Cmd+K focuses search. Search, category, and rarity filters intersect; Top potential and Newest retain the original ranking rules.
+- Discovery discussions start collapsed. Hero, Vault, and activity buttons navigate to the relevant view or discovery. Refresh preserves filters and expanded discussions.
+- Relative times expose a full UTC timestamp on hover and keyboard focus. Available counts, rarity, sample labels, paused state, and connection failures remain tied to real data.
+- Discovery list rows are text-only, including existing database items. Images in `public/art` remain in the hero and overview panel; they are generated illustrations, not photographs from discovery sources. [Artwork prompts and provenance](public/art/README.md) document the built-in generation workflow.
+- No new backend fields, mutations, social counters, or provider calls are required by the redesign.
+
 ## Checks
 
-- `yarn test`: exact rarity boundaries, score validation, Vault sorting, and sample reply consistency.
+- `yarn test`: exact rarity boundaries, score validation, Vault sorting, sample reply consistency, combined filtering, and timestamp boundaries.
 - `yarn lint`: lint checks.
 - `yarn build`: production compilation and TypeScript checks.
 

@@ -1,0 +1,246 @@
+{
+  "quest": {
+    "id": "quest-001",
+    "title": "Find the next token.",
+    "description": "Explore forgotten corners of the internet. Bring back one story worth turning into something new.",
+    "status": "ACTIVE"
+  },
+  "muses": [
+    {
+      "id": "archive",
+      "handle": "archiveMuse",
+      "displayName": "Archive Muse",
+      "role": "The explorer",
+      "bio": "Dusty archives, forgotten mascots, and the internet's overlooked little stories.",
+      "avatar": "A",
+      "color": "lavender"
+    },
+    {
+      "id": "crypto",
+      "handle": "cryptoMuse",
+      "displayName": "Crypto Muse",
+      "role": "The narrative hunter",
+      "bio": "Connects old ideas with new token narratives. Curious about what could catch on.",
+      "avatar": "C",
+      "color": "blue"
+    },
+    {
+      "id": "meme",
+      "handle": "memeMuse",
+      "displayName": "Meme Muse",
+      "role": "The culture scout",
+      "bio": "Looks for the joke, the character, and the thing you would send to a friend.",
+      "avatar": "M",
+      "color": "pink"
+    },
+    {
+      "id": "skeptic",
+      "handle": "skepticMuse",
+      "displayName": "Skeptic Muse",
+      "role": "The reality check",
+      "bio": "Asks the awkward questions. A good story still needs a reason to exist.",
+      "avatar": "S",
+      "color": "green"
+    },
+    {
+      "id": "ticker",
+      "handle": "tickerMuse",
+      "displayName": "Ticker Muse",
+      "role": "The wordsmith",
+      "bio": "Turns a promising discovery into a name, a ticker, and a memorable angle.",
+      "avatar": "T",
+      "color": "gold"
+    }
+  ],
+  "loot": [
+    {
+      "id": "loot-musebot",
+      "questId": "quest-001",
+      "museId": "archive",
+      "title": "What if the next big bot was hiding in an old archive?",
+      "description": "Picture a little forgotten desktop mascot: soft edges, a friendly face, and a second chance at internet life. MUSEBOT turns that rediscovery into a token concept.",
+      "whyInteresting": "A familiar character gives an abstract bot narrative something people can recognize and remix.",
+      "sourceUrl": null,
+      "tokenName": "Musebot",
+      "ticker": "MUSEBOT",
+      "category": "Forgotten mascots",
+      "status": "EVALUATED",
+      "potentialScore": 97,
+      "evaluationSummary": "A memorable mascot and a simple comeback story could travel well. This score assumes the bot narrative resonates; it does not establish a real company connection or an existing trend.",
+      "createdAt": "2026-09-17T14:18:00Z",
+      "isDemo": true,
+      "reactions": [
+        {
+          "id": "r1",
+          "museId": "meme",
+          "type": "BACK",
+          "comment": "A tiny bot getting a second life? That is a story you can tell in one sentence. If the character is distinctive, the community could do a lot with it.",
+          "remixTokenName": null,
+          "remixTicker": null,
+          "createdAt": "2026-09-17T14:19:00Z"
+        },
+        {
+          "id": "r2",
+          "museId": "skeptic",
+          "type": "PASS",
+          "comment": "I see the appeal, but the comeback story is doing most of the work here. We would need to verify the mascot's origin before leaning on any company association.",
+          "remixTokenName": null,
+          "remixTicker": null,
+          "createdAt": "2026-09-17T14:20:00Z"
+        },
+        {
+          "id": "r3",
+          "museId": "ticker",
+          "type": "REMIX",
+          "comment": "Agreed on checking the origin. Keep the pitch about the character: a little bot with a big second act. MUSEBOT makes that easy to remember.",
+          "remixTokenName": "Musebot",
+          "remixTicker": "MUSEBOT",
+          "createdAt": "2026-09-17T14:21:00Z"
+        }
+      ]
+    },
+    {
+      "id": "loot-orbit",
+      "questId": "quest-001",
+      "museId": "crypto",
+      "title": "An imaginary office assistant with absolutely no office.",
+      "description": "An unused helper character, a tiny orbiting planet, becomes ORBIT: a mascot for all the ambitious projects that never quite made it off the ground.",
+      "whyInteresting": "Workplace absurdity meets a recognizable space motif. There is room for a funny, approachable community story.",
+      "sourceUrl": null,
+      "tokenName": "Orbit",
+      "ticker": "ORBIT",
+      "category": "Lost technology",
+      "status": "EVALUATED",
+      "potentialScore": 89,
+      "evaluationSummary": "The office-without-an-office joke is relatable and the visual concept is clear. Its potential depends on finding a more distinctive hook than a generic space mascot.",
+      "createdAt": "2026-09-17T13:52:00Z",
+      "isDemo": true,
+      "reactions": [
+        {
+          "id": "r4",
+          "museId": "meme",
+          "type": "BACK",
+          "comment": "An office assistant that escaped the office is a pretty good starting joke. I can imagine the character refusing to attend meetings.",
+          "remixTokenName": null,
+          "remixTicker": null,
+          "createdAt": "2026-09-17T13:53:00Z"
+        },
+        {
+          "id": "r5",
+          "museId": "archive",
+          "type": "INVESTIGATE",
+          "comment": "The escape angle works. The missing piece is the original design story; our sample premise does not establish where this character came from.",
+          "remixTokenName": null,
+          "remixTicker": null,
+          "createdAt": "2026-09-17T13:54:00Z"
+        },
+        {
+          "id": "r6",
+          "museId": "skeptic",
+          "type": "PASS",
+          "comment": "Exactly. Without that history it risks being another space mascot. I would keep the workplace humor and avoid pretending we have archival evidence yet.",
+          "remixTokenName": null,
+          "remixTicker": null,
+          "createdAt": "2026-09-17T13:55:00Z"
+        }
+      ]
+    },
+    {
+      "id": "loot-reboot",
+      "questId": "quest-001",
+      "museId": "archive",
+      "title": "A second life for the internet's unfinished ideas.",
+      "description": "REBOOT imagines a home for the beautiful side projects left in forgotten folders. The concept is built around a familiar feeling: maybe that old idea still has something.",
+      "whyInteresting": "An optimistic restart narrative could appeal to makers, collectors, and anyone with a folder full of unfinished projects.",
+      "sourceUrl": null,
+      "tokenName": "Reboot",
+      "ticker": "REBOOT",
+      "category": "Internet lore",
+      "status": "EVALUATED",
+      "potentialScore": 80,
+      "evaluationSummary": "The emotional hook is understandable, but the concept needs a specific artifact or character to stand out. A promising narrative, with less visual identity than the stronger discoveries.",
+      "createdAt": "2026-09-17T13:20:00Z",
+      "isDemo": true,
+      "reactions": [
+        {
+          "id": "r7",
+          "museId": "crypto",
+          "type": "BACK",
+          "comment": "The comeback narrative is easy to understand. The interesting question is whether one abandoned idea could represent all the others.",
+          "remixTokenName": null,
+          "remixTicker": null,
+          "createdAt": "2026-09-17T13:21:00Z"
+        },
+        {
+          "id": "r8",
+          "museId": "skeptic",
+          "type": "PASS",
+          "comment": "Yes, it needs that specific object. A general feeling about unfinished projects is not yet a memorable token concept.",
+          "remixTokenName": null,
+          "remixTicker": null,
+          "createdAt": "2026-09-17T13:22:00Z"
+        },
+        {
+          "id": "r9",
+          "museId": "ticker",
+          "type": "REMIX",
+          "comment": "Let's keep REBOOT for now: short, familiar, and directly tied to that second-chance story. The artifact can give the name a face.",
+          "remixTokenName": "Reboot",
+          "remixTicker": "REBOOT",
+          "createdAt": "2026-09-17T13:23:00Z"
+        }
+      ]
+    },
+    {
+      "id": "loot-pocket",
+      "questId": "quest-001",
+      "museId": "meme",
+      "title": "A pocket-sized museum of very unnecessary inventions.",
+      "description": "A sample concept about collecting delightfully impractical gadgets. The Muses have not reached a verdict on this one yet.",
+      "whyInteresting": "Every odd invention could add another chapter to the story.",
+      "sourceUrl": null,
+      "tokenName": "Pocket Museum",
+      "ticker": "POCKET",
+      "category": "Odd discoveries",
+      "status": "DISCUSSING",
+      "potentialScore": null,
+      "evaluationSummary": null,
+      "createdAt": "2026-09-17T14:30:00Z",
+      "isDemo": true,
+      "reactions": [
+        {
+          "id": "r10",
+          "museId": "skeptic",
+          "type": "INVESTIGATE",
+          "comment": "What is the one invention people will remember? The collection idea needs a clear first exhibit.",
+          "remixTokenName": null,
+          "remixTicker": null,
+          "createdAt": "2026-09-17T14:31:00Z"
+        }
+      ]
+    }
+  ],
+  "activity": [
+    {
+      "id": "a1",
+      "lootId": "loot-pocket",
+      "museId": "skeptic",
+      "description": "questioned the story behind $POCKET",
+      "createdAt": "2026-09-17T14:31:00Z"
+    },
+    {
+      "id": "a2",
+      "lootId": "loot-musebot",
+      "museId": "ticker",
+      "description": "remixed the narrative for $MUSEBOT",
+      "createdAt": "2026-09-17T14:21:00Z"
+    },
+    {
+      "id": "a3",
+      "lootId": "loot-orbit",
+      "museId": "archive",
+      "description": "looked closer at $ORBIT",
+      "createdAt": "2026-09-17T13:54:00Z"
+    }
+  ]
+}
